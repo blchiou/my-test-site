@@ -3,54 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>我的分享網站</title>
+  <title>I'm Bryan Chiou</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- 頁首 -->
   <header>
-    <!-- LOGO (左上角，可改圖片或文字) -->
+    <!-- 左上 LOGO -->
     <div class="logo">
       <a href="#">
         <img src="https://via.placeholder.com/160x40?text=My+Logo" alt="網站LOGO">
       </a>
     </div>
 
-    <!-- 右上雙排分類 -->
-    <div class="nav-container">
-      <nav class="nav-top">
-        <a href="#">Homedecor</a>
-        <a href="#">Interiors</a>
-        <a href="#">Selects</a>
+    <!-- 右上雙欄選單 -->
+    <div class="nav-columns">
+      <!-- 左欄：站內分類 -->
+      <nav class="nav-left">
+        <a href="#homedecor">Homedecor</a>
+        <a href="#interiors">Interiors</a>
+        <a href="#selects">Selects</a>
+        <a href="#about">About</a>
       </nav>
-      <nav class="nav-bottom">
-        <a href="#">About</a>
-        <a href="https://instagram.com/你的帳號" target="_blank">Instagram</a>
-        <a href="https://threads.net/你的帳號" target="_blank">Threads</a>
-        <a href="https://facebook.com/你的帳號" target="_blank">Facebook</a>
+
+      <!-- 分隔線 -->
+      <div class="divider"></div>
+
+      <!-- 右欄：外部連結 -->
+      <nav class="nav-right">
+        <a href="https://instagram.com/bolun__chiou" target="_blank">Instagram</a>
+        <a href="https://threads.net/bolun__chiou" target="_blank">Threads</a>
+        <a href="https://facebook.com/bolun.chiou" target="_blank">Facebook</a>
       </nav>
     </div>
   </header>
 
   <!-- 內容 -->
   <main>
-    <article>
-      <img src="https://picsum.photos/900/500?random=1" alt="圖片一">
-      <h2>文章標題一</h2>
-      <p>這是一段範例文字，展示圖片和文字的排版，模仿 Dezeen 的簡約風格。</p>
-    </article>
+    <section id="homedecor">
+      <h2>Homedecor</h2>
+      <article>
+        <img src="https://picsum.photos/900/500?random=1" alt="圖片一">
+        <h3>文章標題一</h3>
+        <p>這是一段範例文字，展示 Homedecor 的內容。</p>
+      </article>
+    </section>
 
-    <article>
-      <img src="https://picsum.photos/900/500?random=2" alt="圖片二">
-      <h2>文章標題二</h2>
-      <p>同樣的版型可用於展示照片日誌、專案紀錄，或是單純的圖文分享。</p>
-    </article>
+    <section id="interiors">
+      <h2>Interiors</h2>
+      <article>
+        <img src="https://picsum.photos/900/500?random=2" alt="圖片二">
+        <h3>文章標題二</h3>
+        <p>這裡是 Interiors 相關的文章。</p>
+      </article>
+    </section>
 
-    <article>
-      <img src="https://picsum.photos/900/500?random=3" alt="圖片三">
-      <h2>文章標題三</h2>
-      <p>這裡放上你想分享的照片與想法，就能打造屬於自己的圖文網站。</p>
-    </article>
+    <section id="selects">
+      <h2>Selects</h2>
+      <article>
+        <img src="https://picsum.photos/900/500?random=3" alt="圖片三">
+        <h3>文章標題三</h3>
+        <p>這裡是 Selects 的內容展示。</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>這裡可以放上網站的簡介、作者介紹或聯絡資訊。</p>
+    </section>
   </main>
 
   <!-- 頁尾 -->
