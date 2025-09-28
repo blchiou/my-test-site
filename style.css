@@ -1,34 +1,53 @@
+/* ===== 全域設定 ===== */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
   background: #fff;
   color: #111;
+  line-height: 1.6;
 }
 
+/* ===== Header ===== */
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px 40px;
   border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo img {
+  max-height: 40px;
+  width: auto;
 }
 
-nav a {
-  margin-left: 20px;
+/* 右上雙排容器 */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-top a,
+.nav-bottom a {
   text-decoration: none;
-  color: #333;
+  color: #111;
   font-weight: 500;
+  margin-left: 20px;
 }
 
+.nav-top {
+  margin-bottom: 8px;
+}
+
+.nav-top a:hover,
+.nav-bottom a:hover {
+  color: #888;
+}
+
+/* ===== Main ===== */
 main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -40,12 +59,12 @@ article {
 article img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
   margin-bottom: 15px;
+  border-radius: 4px;
 }
 
 article h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -54,6 +73,7 @@ article p {
   color: #444;
 }
 
+/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 20px;
